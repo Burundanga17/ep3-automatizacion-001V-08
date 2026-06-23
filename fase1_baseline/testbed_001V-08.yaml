@@ -1,0 +1,12 @@
+devices:
+  CSR1kv: # nombre generico - funciona con cualquier hostname inicial
+    os: iosxe
+    type: router
+    credentials:
+      default:
+        username: cisco
+        password: cisco123!
+    connections:
+      cli:
+        protocol: ssh -p 22 -o KexAlgorithms=diffie-hellman-group14-sha1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
+        ip: 192.168.56.101
