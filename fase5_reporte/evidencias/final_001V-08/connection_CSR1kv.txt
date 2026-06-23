@@ -1,0 +1,35 @@
+[2026-06-23 18:38:59,962] +++ CSR1kv logfile evidencias/final_001V-08/connection_CSR1kv.txt +++
+[2026-06-23 18:38:59,966] +++ Unicon plugin iosxe +++
+Warning: Permanently added '192.168.56.101' (RSA) to the list of known hosts.
+[2026-06-23 18:39:00,205] +++ connection to spawn: ssh -l cisco -p 22 -o KexAlgorithms=diffie-hellman-group14-sha1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null 192.168.56.101, id: 140283447892720 +++
+[2026-06-23 18:39:00,205] connection to CSR1kv
+
+Password: 
+
+ACCESO RESTRINGIDO - SERFIN
+
+
+RTR-SERFIN#[2026-06-23 18:40:39,756] +++ CSR1kv logfile evidencias/final_001V-08/connection_CSR1kv.txt +++
+[2026-06-23 18:40:39,756] +++ Unicon plugin iosxe +++
+Warning: Permanently added '192.168.56.101' (RSA) to the list of known hosts.
+
+[2026-06-23 18:40:39,874] +++ connection to spawn: ssh -l cisco -p 22 -o KexAlgorithms=diffie-hellman-group14-sha1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null 192.168.56.101, id: 139938828340480 +++
+[2026-06-23 18:40:39,874] connection to CSR1kv
+Password: 
+
+ACCESO RESTRINGIDO - SERFIN
+
+
+
+RTR-SERFIN#[2026-06-23 18:59:56,369] +++ CSR1kv logfile evidencias/final_001V-08/connection_CSR1kv.txt +++
+[2026-06-23 18:59:56,369] +++ Unicon plugin iosxe +++
+Warning: Permanently added '192.168.56.101' (RSA) to the list of known hosts.
+
+[2026-06-23 18:59:56,461] +++ connection to spawn: ssh -l cisco -p 22 -o KexAlgorithms=diffie-hellman-group14-sha1 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null 192.168.56.101, id: 140309562563888 +++
+[2026-06-23 18:59:56,461] connection to CSR1kv
+Password: 
+
+ACCESO RESTRINGIDO - SERFIN
+
+
+RTR-SERFIN#

@@ -1,0 +1,48 @@
+[36mloading yaml file /home/devasc/Desktop/ep3-automatizacion-001V-08/fase5_reporte/testbed_001V-08.yaml[0m[39m
+[36mDeriving testbed name ...[0m[39m
+[36mUsing a default key as pyATS configuration under [secrets] string.key was not specified.[0m[39m
+[36mUsing a default key as pyATS configuration under [secrets] string.key was not specified.[0m[39m
+[36mCredential credentials not found, trying default ...[0m[39m
+[36mCredential credentials not found, trying default ...[0m[39m
+
+Learning '['interface', 'platform', 'routing']' on devices '['CSR1kv']'
+2026-06-23T18:59:56: %UNICON-WARNING: [33mDevice 'CSR1kv' connection 'cli' does not have IP and/or port specified, ignoring[0m[39m
+[33mDevice 'CSR1kv' connection 'cli' does not have IP and/or port specified, ignoring[0m[39m
+[36mUsing a default key as pyATS configuration under [secrets] string.key was not specified.[0m[39m
+[36mTraceback (most recent call last):
+  File "src/unicon/statemachine/statemachine.py", line 719, in unicon.statemachine.statemachine.StateMachine.go_to
+  File "src/unicon/statemachine/statetransition.py", line 486, in unicon.statemachine.statetransition.AnyStateTransition.do_transitions
+  File "src/unicon/eal/dialogs.py", line 457, in unicon.eal.dialogs.Dialog.process
+  File "src/unicon/eal/dialog_processor.py", line 306, in unicon.eal.dialog_processor.SimpleDialogProcessor.process
+  File "src/unicon/eal/dialog_processor.py", line 265, in unicon.eal.dialog_processor.SimpleDialogProcessor.timeout_handler
+unicon.core.errors.TimeoutError: timeout occurred:
+              timeout value: 60
+              last_command: 'cisco123!\r'
+             pattern: ['^.*?% (Bad passwords|Access denied|Authentication failed)', '^.*Login incorrect', '^.*([Uu]sername|[Ll]ogin): ?$', '^.*User Access Verification', '^.*[Pp]assword( for )?(\\S+)?: ?$', '^(.*)Kerberos: No default realm defined for Kerberos!', 'Password OK\\s*$', '^.*Enter passphrase for key .*?:\\s*?', '^.*(initial|basic) configuration dialog\\s?\\??\\s*((\\[yes.*\\])|(\\(yes/no\\))|(\\(yes/no\\)\\s*(\\[y\\]))):', 'Would you like to enter basic management setup\\? \\[yes/no\\]:', 'Escape character is .*\\n', '^.*RETURN to get started', 'Are you sure you want to continue connecting \\(yes/no(/\\[fingerprint\\])?\\)', '^.*(Connection refused|Connection reset by peer|Network is down|closed by remote host)', 'Received disconnect from .*:', 'Hit Enter to proceed:', '^(.*?)Press Ctrl\\+x to Exit the session', '^(.*?)Connected.', '^.*[Pp]assword( for )?(\\S+)?: ?$', '^.*?% (Bad passwords|Access denied|Authentication failed)', '^.*System config(uration)? has been modified\\.\\s*Save\\?.*$', '^.*Are you sure you want to reset the system\\s*\\(y\\/n\\)\\?', '^.*Reload node\\s*\\?\\s*\\[no,yes\\]\\s?$', '^.*Proceed( with reload)?\\?\\s*\\[confirm\\]', '^.*Press RETURN to get started.*', '^.*User Access Verification', '^(.*)Uncommitted changes found.*?', '^.*(initial|basic) configuration dialog\\s?\\??\\s*((\\[yes.*\\])|(\\(yes/no\\))|(\\(yes/no\\)\\s*(\\[y\\]))):', '^(.*)Would you like to terminate autoinstall\\?\\s*\\[yes\\]:\\s*$', '^.*Do you want to reload the internal AP\\s?\\?\\s((\\[yes/no\\]\\??)|(\\[y/n\\]\\??)):?\\s?$', '^.*Do you want to save the configuration of the AP\\s?\\?\\s*((\\[yes/no\\]\\??)|(\\[y/n\\]\\??)):?\\s?$', '^(.*)This command will reboot the system.\\s*\\(y\\/n\\)\\?\\s*\\[n\\]\\s?$', '^.*Do you want to enforce secure password standard(\\?)?\\s*\\(yes\\/no\\)(\\s*\\[[yn]\\])?\\:\\s*', '^.*(Enter|Confirm) the password for .*admin', 'Abort( Power On)? Auto Provisioning .*:', '^.*([Uu]sername|[Ll]ogin): ?$', '^.*[Pp]assword( for )?(\\S+)?: ?$', 'Password OK\\s*$', '^.*?% (Bad passwords|Access denied|Authentication failed)', '^.*Login incorrect', '^.*([Uu]sername|[Ll]ogin): ?$', '^.*User Access Verification', '^.*[Pp]assword( for )?(\\S+)?: ?$', '^(.*)Kerberos: No default realm defined for Kerberos!', 'Password OK\\s*$', '^.*Enter passphrase for key .*?:\\s*?', '^.*(initial|basic) configuration dialog\\s?\\??\\s*((\\[yes.*\\])|(\\(yes/no\\))|(\\(yes/no\\)\\s*(\\[y\\]))):', 'Would you like to enter basic management setup\\? \\[yes/no\\]:', 'Escape character is .*\\n', '^.*RETURN to get started', 'Are you sure you want to continue connecting \\(yes/no(/\\[fingerprint\\])?\\)', '^.*(Connection refused|Connection reset by peer|Network is down|closed by remote host)', 'Received disconnect from .*:', 'Hit Enter to proceed:', '^(.*?)Press Ctrl\\+x to Exit the session', '^(.*?)Connected.', '^(.*)Please reset', '^(.*)(rommon(.*))+>.*$', '^.*(Enter|Confirm) the password for .*admin', '^.*(initial|basic) configuration dialog.*\\s?', '^(.*)Would you like to terminate autoinstall\\? ?\\[yes\\]: $', '^.*Are you sure you want to continue\\? \\[y/n\\]\\s?.*$', '^(.*?)\\[CSR1kv|[S|s]witch.*(\\]\\$)?\\s?$', 'rommon[\\s\\d]*>\\s?$', '^(.*)\\(.*(con|cfg|ipsec-profile)\\S*\\)#\\s?$', '^(.*?)(Router|Switch|ios|switch|CSR1kv)([0-9])?(\\(standby\\))?(-stby)?(\\(boot\\))?#\\s?$', '^(.*?)(Router|Switch|ios|switch|CSR1kv)([0-9])?(\\(standby\\))?(-stby)?(\\(boot\\))?>\\s?$', '^.*--\\s?[Mm]ore\\s?--.*$']
+             buffer:'\r\n\r\nACCESO RESTRINGIDO - SERFIN\r\n\r\n\r\nRTR-SERFIN#'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/unicon/bases/connection.py", line 627, in unicon.bases.connection.Connection.connect
+  File "src/unicon/bases/routers/connection_provider.py", line 144, in unicon.bases.routers.connection_provider.BaseSingleRpConnectionProvider.connect
+  File "src/unicon/bases/routers/connection_provider.py", line 166, in unicon.bases.routers.connection_provider.BaseSingleRpConnectionProvider.establish_connection
+  File "src/unicon/statemachine/statemachine.py", line 722, in unicon.statemachine.statemachine.StateMachine.go_to
+unicon.core.errors.StateMachineError: Failed while bringing device to "any" state
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "src/pyats/cli/base.py", line 207, in pyats.cli.base.Command.main
+  File "src/genie/cli/commands/learn.py", line 125, in genie.cli.commands.learn.LearnCommand.run
+  File "src/genie/cli/commands/learn.py", line 165, in genie.cli.commands.learn.LearnCommand._learn_ops
+  File "src/genie/conf/base/device.py", line 633, in genie.conf.base.device.Device.connect
+  File "src/pyats/connections/manager.py", line 334, in pyats.connections.manager.ConnectionManager.connect
+  File "src/unicon/bases/connection.py", line 633, in unicon.bases.connection.Connection.connect
+unicon.core.errors.ConnectionError: failed to connect to CSR1kv
+Failed while bringing device to "any" state
+[0m[39m
+[1m[31m
+failed to connect to CSR1kv
+Failed while bringing device to "any" state[0m[39m
+
