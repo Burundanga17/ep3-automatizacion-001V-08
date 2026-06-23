@@ -1,0 +1,26 @@
+# vars/vars_001V-08.yaml
+# Archivo centralizado de variables del proyecto EP3.
+# Todos los scripts, playbooks y validaciones importan estos valores.
+# Ningun dato del alumno debe escribirse directamente en otro archivo del repo.
+
+codigo: "001V-08"
+nombre: "Maldonado Bustamante Nicolas Gabriel"
+
+cliente:
+  empresa: "Servicios Financieros SA"
+  hostname: "RTR-SERFIN"
+
+router:
+  # IP y credenciales de ejemplo del enunciado.
+  # Actualizar aqui cuando se confirme el acceso real al CSR1kv -
+  # el resto del proyecto no necesita ningun otro cambio.
+  ip: "192.168.56.101"
+  usuario: "cisco"
+  password: "cisco123!"
+  loopback_id: 10
+  loopback_ip: "10.1.8.1"
+  loopback_mask: "255.255.255.0"
+  loopback_prefix: "24"
+  descripcion_wan: "Enlace-WAN-Puerto-Montt"
+  banner: "ACCESO RESTRINGIDO - SERFIN"
+  ntp_server: "208.67.222.222"
