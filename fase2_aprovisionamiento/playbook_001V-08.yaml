@@ -1,0 +1,70 @@
+---
+# fase2_aprovisionamiento/playbook_001V-08.yaml
+# Aprovisionamiento corporativo del router CSR1kv para Servicios Financieros SA.
+# Todos los valores especificos del alumno/cliente se cargan desde vars_files.
+# Ningun dato de la ficha esta escrito directamente en este playbook.
+
+- name: Aprovisionamiento corporativo CSR1kv - EP3 DRY7122
+  hosts: routers
+  gather_facts: no
+  vars_files:
+    - "../vars/vars_001V-08.yaml"
+
+  tasks:
+
+    - name: Respaldar configuracion actual del router (show running-config)
+      ios_command:
+        commands:
+          - show running-config
+      register: respaldo_actual
+
+    - name: Guardar respaldo en archivo local antes de aplicar cambios (solo si no existe)
+      copy:
+        content: "{{ respaldo_actual.stdout[0] }}"
+        dest: "../fase2_aprovisionamiento/respaldo/backup_001V-08.cfg"
+        force: no
+      delegate_to: localhost
+
+    - name: Habilitar NETCONF (netconf-yang)
+      ios_config:
+        lines:
+          - netconf-yang
+
+    - name: Habilitar RESTCONF
+      ios_config:
+        lines:
+          - restconf
+
+    - name: Habilitar servidor HTTP seguro (ip http secure-server)
+      ios_config:
+        lines:
+          - ip http secure-server
+
+    - name: Configurar hostname corporativo
+      ios_config:
+        lines:
+          - "hostname {{ cliente.hostname }}"
+
+    - name: Configurar banner de acceso
+      ios_banner:
+        banner: motd
+        text: "{{ router.banner }}"
+        state: present
+
+    - name: Configurar servidor NTP
+      ios_config:
+        lines:
+          - "ntp server {{ router.ntp_server }}"
+
+    - name: Configurar descripcion de interfaz GigabitEthernet1
+      ios_config:
+        lines:
+          - "description {{ router.descripcion_wan }}"
+        parents: "interface GigabitEthernet1"
+
+    - name: Crear interfaz Loopback con IP de gestion
+      ios_config:
+        lines:
+          - "description Loopback de gestion - {{ cliente.empresa }}"
+          - "ip address {{ router.loopback_ip }} {{ router.loopback_mask }}"
+        parents: "interface Loopback{{ router.loopback_id }}"
