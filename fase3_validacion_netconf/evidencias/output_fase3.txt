@@ -1,0 +1,22 @@
+============================================================
+Script         : validacion_netconf.py
+Fecha/Hora     : 2026-06-23 18:12:06
+Hostname VM    : labvm
+============================================================
+
+Conectando a 192.168.56.101 via NETCONF (puerto 830)...
+Conexion NETCONF establecida correctamente.
+
+XML crudo guardado en evidencias/rpc_reply_raw.xml
+
+Resultado de validacion NETCONF
+------------------------------------------------------------
+[OK]    Hostname             esperado='RTR-SERFIN'  obtenido='RTR-SERFIN'
+[OK]    IP Loopback          esperado='10.1.8.1'  obtenido='10.1.8.1'
+[OK]    Mascara Loopback     esperado='255.255.255.0'  obtenido='255.255.255.0'
+[OK]    Descripcion WAN      esperado='Enlace-WAN-Puerto-Montt'  obtenido='Enlace-WAN-Puerto-Montt'
+[OK]    Servidor NTP         esperado='208.67.222.222'  obtenido='208.67.222.222'
+------------------------------------------------------------
+Criterios conformes: 5/5
+
+RESULTADO GLOBAL: CONFORME
