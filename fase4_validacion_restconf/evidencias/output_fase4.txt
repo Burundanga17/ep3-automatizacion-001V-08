@@ -1,0 +1,22 @@
+============================================================
+Script         : validacion_restconf.py
+Fecha/Hora     : 2026-06-23 18:33:25
+Hostname VM    : labvm
+============================================================
+
+Conectando a 192.168.56.101 via RESTCONF (HTTPS)...
+Conexion RESTCONF establecida correctamente (HTTP 200).
+
+JSON crudo guardado en evidencias/responses/restconf_response_raw.json
+
+Resultado de validacion RESTCONF
+------------------------------------------------------------
+[OK]    Hostname             esperado='RTR-SERFIN'  obtenido='RTR-SERFIN'
+[OK]    IP Loopback          esperado='10.1.8.1'  obtenido='10.1.8.1'
+[OK]    Mascara Loopback     esperado='255.255.255.0'  obtenido='255.255.255.0'
+[OK]    Descripcion WAN      esperado='Enlace-WAN-Puerto-Montt'  obtenido='Enlace-WAN-Puerto-Montt'
+[OK]    Servidor NTP         esperado='208.67.222.222'  obtenido='208.67.222.222'
+------------------------------------------------------------
+Criterios conformes: 5/5
+
+RESULTADO GLOBAL: CONFORME
