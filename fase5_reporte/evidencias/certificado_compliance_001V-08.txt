@@ -1,0 +1,20 @@
+============================================================
+CERTIFICADO DE COMPLIANCE
+============================================================
+Proyecto      : EP3 - Automatizacion de Red con Compliance Auditado
+Asignatura    : DRY7122 - Programacion y Redes Virtualizadas (SDN-NFV)
+Alumno        : Maldonado Bustamante Nicolas Gabriel
+Codigo alumno : 001V-08
+Cliente       : Servicios Financieros SA
+Hostname      : RTR-SERFIN
+Generado el   : 2026-06-24 22:56:05
+============================================================
+
+Fuentes de verificacion analizadas:
+  1. Diff de Genie (baseline vs estado final)  : OK
+  2. Validacion NETCONF (Fase 3)                : CONFORME
+  3. Validacion RESTCONF (Fase 4)               : CONFORME
+
+------------------------------------------------------------
+RESULTADO FINAL DE LA AUDITORIA: CONFORME
+------------------------------------------------------------

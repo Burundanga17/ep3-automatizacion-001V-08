@@ -85,8 +85,9 @@ playbook ni en los scripts de validación.
 
 El detalle completo de cada validación se encuentra en las carpetas
 `fase3_validacion_netconf/`, `fase4_validacion_restconf/` y
-`fase5_reporte/evidencias/diff_001V-08.txt`. El certificado formal de
-compliance está disponible en `fase5_reporte/certificado_compliance.md`.
+`fase5_reporte/evidencias/diff_001V-08/`. El certificado formal de
+compliance se genera mediante el script `fase5_reporte/generar_certificado.py`
+y queda disponible en `fase5_reporte/evidencias/certificado_compliance_001V-08.txt`.
 
 ## 7. Conclusiones
 
